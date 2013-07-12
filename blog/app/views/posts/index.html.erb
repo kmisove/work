@@ -1,0 +1,22 @@
+<h1>Blog </h1>
+
+  
+  
+
+<% @posts.each do |post| %>
+  
+  <h2><%= link_to post.title, post %></h2> - Added <%= time_ago_in_words post.created_at %> ago
+	
+	
+		
+		
+	<p>
+		<%= truncate post.text %>
+	</p>
+    
+<% end %>
+
+
+<br />
+
+<%= link_to 'Create new post', new_post_path %>
