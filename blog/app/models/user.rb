@@ -6,14 +6,14 @@ class User < ActiveRecord::Base
   validates :first_name,
   :presene => TRUE,
   :length  => {
-    :minimum => 2,
+    :minimum => 2
     :allow_blank => TRUE
   }
   
   validates :last_name,
   :presence => TRUE
   :length   => {
-    :minimum => 2,
+    :minimum => 2
     :allow_blank => TRUE
   }
   
